@@ -1,0 +1,124 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #f4f4f4;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  min-height: 100vh;
+  padding: 20px;
+  overflow-x: hidden;
+}
+
+.container {
+  background: #fff;
+  padding: 30px;
+  max-width: 400px;
+  width: 100%;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+  border-radius: 5px;
+}
+
+h2 {
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.balance {
+  text-align: center;
+  margin: 20px 0;
+}
+
+.inc-exp-container {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+  flex-wrap: wrap; /* Add this */
+}
+.inc-exp-container > div {
+  flex: 1 1 45%; /* Responsive flex */
+  min-width: 120px;
+}
+
+
+.money {
+  font-size: 18px;
+  margin-top: 5px;
+}
+
+.money.plus {
+  color: green;
+}
+
+.money.minus {
+  color: red;
+}
+
+.list {
+  list-style-type: none;
+  margin-bottom: 30px;
+  max-height: 200px;
+  overflow-y: auto;
+}
+
+.list li {
+  background-color: #f6f6f6;
+  padding: 10px;
+  border-right: 5px solid;
+  display: flex;
+  justify-content: space-between;
+  margin: 10px 0;
+  border-radius: 4px;
+}
+
+.list li.plus {
+  border-color: green;
+}
+
+.list li.minus {
+  border-color: red;
+}
+
+.delete-btn {
+  background: none;
+  border: none;
+  color: #aaa;
+  cursor: pointer;
+  font-size: 20px;
+}
+
+.delete-btn:hover {
+  color: red;
+}
+
+.form-control {
+  margin-bottom: 15px;
+}
+
+input[type="text"],
+input[type="number"] {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+}
+
+.btn {
+  width: 100%;
+  padding: 10px;
+  background-color: #5c67f2;
+  color: white;
+  border: none;
+  cursor: pointer;
+  border-radius: 4px;
+}
+
+.btn:hover {
+  background-color: #4a54e1;
+}
+
